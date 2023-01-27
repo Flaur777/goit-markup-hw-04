@@ -156,6 +156,13 @@ p {
 .hero-section {
     background-color: var(--dark-text-color);
     padding: 188px 0;
+    
+    background-image: url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 1440px;
+    margin: 0 auto;
+
 }
 
 .hero-container {
