@@ -31,6 +31,10 @@ footer {
     padding: 100px 0;
 }
 
+a {
+    text-decoration: 0;
+}
+
 .footer-container {
     display: flex;
 }
@@ -202,8 +206,9 @@ p {
     
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     max-width: 1440px;
+    height: 600px;
     margin: 0 auto;
 
 }
@@ -276,7 +281,7 @@ p {
 }
 
 .doing-section {
-    padding-bottom: 120px;
+    padding-top: 0px;
 }
 
 .name {
@@ -359,7 +364,8 @@ p {
     justify-content: center;
     align-items: center;
 
-    padding: 16px 32px;
+    width: 168px;
+    height: 88px;
 
     color: var(--subtle-text-color) ;
 
@@ -429,14 +435,21 @@ p {
     flex-basis: calc((100% - 48px) / 3);
 }
 
-.picture-item:hover {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
 .pic-container {
     border-bottom: 1px solid #E7E9FC;
     border-left: 1px solid #E7E9FC;
     border-right: 1px solid #E7E9FC;
     padding: 32px 0;
     padding-left: 16px;
+}
+
+.picture-link {
+    display: block;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+    color: var(--main-text-color);
+}
+
+.picture-link:hover,
+.picture-link:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
